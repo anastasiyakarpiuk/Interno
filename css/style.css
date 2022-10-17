@@ -470,6 +470,13 @@ ul.services__items {
   margin-bottom: 70px;
 }
 
+.blog__list {
+  display: grid;
+  grid-template-columns: repeat(3, 387px);
+  gap: 40px 20px;
+  margin-bottom: 40px;
+}
+
 .blog__item {
   display: inline-block;
   border: 1px solid #E7E7E7;
@@ -477,7 +484,7 @@ ul.services__items {
   padding: 21px 21px 40px;
   max-width: 387px;
   width: 100%;
-  margin: 0 10px 40px;
+  margin: 0 10px 0;
   text-align: initial;
 }
 
@@ -519,6 +526,27 @@ ul.services__items {
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #F4F0EC;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #CDA274;
+}
+
+.dot:not(:last-child) {
+  margin-right: 10px;
 }
 
 .join__inner {
