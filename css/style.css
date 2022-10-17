@@ -378,14 +378,20 @@ ul.services__items {
 }
 
 .projects__list {
-  display: grid;
-  grid-template-columns: 590px 2fr;
-  gap: 60px 20px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+
 }
 
 .projects__item {
   max-width: 590px;
   width: 100%;
+  display: none;
+}
+
+.projects__item.active {
+  display: block;
 }
 
 .projects__img {
