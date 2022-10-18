@@ -99,7 +99,7 @@ button {
   padding: 6px 0;
 }
 
-.menu {
+.menu__list {
   display: flex;
 }
 

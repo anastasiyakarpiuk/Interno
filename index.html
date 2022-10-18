@@ -11,31 +11,33 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="body">
   <header class="header">
     <div class="header__top">
       <div class="container">
         <div class="header__top-inner">
-          <a href="#" class="logo">
+          <a class="logo" href="#body">
             <img class="logo__img" src="images/logo.svg" alt="logo">
           </a>
-          <ul class="menu">
-            <li class="menu__item">
-              <a class="menu__link" href="#">Home</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">About Us</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Services</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Pages</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Contact Us</a>
-            </li>
-          </ul>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#body">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#about">About Us</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#services">Services</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#blog">Pages</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
@@ -53,32 +55,32 @@
   </header>
 
   <main class="main">
-    <section class="services">
+    <section class="services"  id="services">
       <div class="container">
         <ul class="services__items">
           <li class="services__item">
             <h4 class="services__name">Interior Design</h4>
             <p class="services__info">Enhancing the interior to achieve a healthier environment for the people using
               right space.</p>
-            <a class="services__link" href="#">View More</a>
+            <a class="services__link" href="#projects">View More</a>
           </li>
           <li class="services__item">
             <h4 class="services__name">Furniture</h4>
             <p class="services__info">Movable articles that are used to make a room or building suitable for living or
               working.</p>
-            <a class="services__link" href="#">View More</a>
+            <a class="services__link" href="#projects">View More</a>
           </li>
           <li class="services__item">
             <h4 class="services__name">Flooring</h4>
             <p class="services__info">Thin object any finished material applied over a floor structure to provide a
               walking surface.</p>
-            <a class="services__link" href="#">View More</a>
+            <a class="services__link" href="#projects">View More</a>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us" id="about">
       <div class="container">
         <div class="about-us__inner">
           <div class="about-us__content">
@@ -177,7 +179,7 @@
       </div>
     </div>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="container">
         <h2 class="projects__title title">Recent Projects</h2>
         <p class="projects__text">With tools to make every part of your process more human and a support team excited to
@@ -280,7 +282,7 @@
       </div>
     </div>
 
-    <section class="blog">
+    <section class="blog" id="blog">
       <div class="container">
         <h2 class="blog__title title">Recent Blogs</h2>
         <p class="blog__text">Get updates about our latest trends and techniques used in interior design project works.
@@ -390,7 +392,7 @@
       </div>
     </section>
 
-    <section class="join">
+    <section class="join" id="contact">
       <div class="container">
         <div class="join__inner">
           <h2 class="join__title title">Wanna join the interno?</h2>
@@ -507,19 +509,19 @@
             <div class="footer__title">Explore</div>
             <ul class="footer__list">
               <li class="footer__item">
-                <a class="footer__link" href="#">About Us</a>
+                <a class="footer__link" href="#about">About Us</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Recent Blog</a>
+                <a class="footer__link" href="#blog">Recent Blog</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Pricing Plan</a>
+                <a class="footer__link" href="#about">Pricing Plan</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Our Projects</a>
+                <a class="footer__link" href="#projects">Our Projects</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Contact Us</a>
+                <a class="footer__link" href="#contact">Contact Us</a>
               </li>
             </ul>
           </div>
