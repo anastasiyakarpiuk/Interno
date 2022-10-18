@@ -85,6 +85,8 @@ button {
 
 .header__top {
   padding: 26px 0 18px;
+  background-color: #FFFFFF;
+  z-index: 10;
 }
 
 .header__top-inner {
@@ -116,11 +118,20 @@ button {
   color: #CDA274;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.header__top.sticky+.header__home {
+  padding-top: 301px;
+}
+
 .header__home {
   background-image: url('../images/bg_home.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
   background-position: center center;
   border-bottom-left-radius: 290px;
   padding: 195px 0 250px;
